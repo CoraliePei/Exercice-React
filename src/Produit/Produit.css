@@ -1,4 +1,9 @@
 div {
-    background-color: rgb(255, 255, 255);
     width: 100%;
+    color: #fff;
+}
+
+ul {
+    display: flex;
+    justify-content: center;
 }

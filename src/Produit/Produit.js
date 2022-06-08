@@ -23,11 +23,13 @@ const produits = [
 export default function Produit() {
     return (
         <div>
+            <ul>
             {
                 produits.map(produit => (
                     <li key={produit.name}><span id={produit.id}>{produit.name}</span></li>
                 ))
             }
+            </ul>
         </div>
     )
 }
