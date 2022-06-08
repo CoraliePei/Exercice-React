@@ -26,7 +26,7 @@ export default function Produit() {
             <ul>
             {
                 produits.map(produit => (
-                    <li key={produit.name}><span id={produit.id}>{produit.name}</span></li>
+                    <li key={produit.id}>{produit.name}</li>
                 ))
             }
             </ul>
