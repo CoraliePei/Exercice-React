@@ -7,3 +7,28 @@ ul {
     display: flex;
     justify-content: center;
 }
+
+.fichePdt {
+    width: 100%;
+    height: 250px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.fichePdt figure {
+    width: 30%;
+    color: #000;
+    border: 1px solid #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+figure img {
+    width: fit-content;
+    height: 90px;
+}
