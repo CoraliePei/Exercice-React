@@ -74,7 +74,7 @@ export default function Produit() {
         {   
           produits.map(produit => (
               <figure key={produit.id}> 
-                  <img src={produit.image}></img>
+                  <img src={produit.image} alt="..."></img>
                   <figcaption>
                       <h3>{produit.titre}</h3>
                       <p>{produit.description}</p>

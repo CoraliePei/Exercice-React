@@ -8,6 +8,7 @@ import Message from './Message/Message';
 import Emoji from './Emoji/Emoji';
 import App from './App/App';
 import Footer from './Footer/Footer';
+import Contact from './Contact/Contact'
 
 import './index.css';
 
@@ -19,9 +20,11 @@ root.render(
       <Routes>
         {/* Cette ligne permet de positionner le header sur toutes les pages qu'elle englobe */}
         <Route path='/' element={<Header />}> 
+          {/* Page d'accueil */}
           <Route index element={<App />} />
+          {/* Liens cliquables */}
           <Route path='contenu' element={<App />} />
-          <Route path='message' element={<Message />} />
+          <Route path='contact' element={<Contact />} />
           <Route path='produit' element={<Produit />} />
         </Route>
       </Routes>
