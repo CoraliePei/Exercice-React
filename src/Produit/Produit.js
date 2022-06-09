@@ -72,18 +72,47 @@ export default function Produit() {
     return (
     <div className="fichePdt">
         {   
-            produits.map(produit => (
-                <figure key={produit.id}> 
-                    <img src={produit.image}></img>
-                    <figcaption>
-                        <h3>{produit.titre}</h3>
-                        <p>{produit.description}</p>
-                        <h4>{produit.prix}</h4>
-                        <h5>{produit.avis}</h5>
-                    </figcaption>
-                </figure>
-            ))
+          produits.map(produit => (
+              <figure key={produit.id}> 
+                  <img src={produit.image}></img>
+                  <figcaption>
+                      <h3>{produit.titre}</h3>
+                      <p>{produit.description}</p>
+                      <h4>{produit.prix}</h4>
+                      <h5>{produit.avis}</h5>
+                  </figcaption>
+              </figure>
+          ))
         }
     </div>
 )}
 
+// Correction props
+// export default function Produit() {
+//   const listeProduits = produits.map((produit) => (
+//       <CardProduit 
+//           key={produit.id}
+//           image={produit.image}
+//           prix={produit.prix}
+//           titre={produit.titre}
+//           description={produit.description}
+//           avis={produit.avis}
+//           />
+//   ))
+//   return listeProduits;
+// }
+
+// export default function Produit(props) {
+//   return (
+//   <div className="fichePdt"> 
+//             <figure> 
+//                 <img src={props.image}></img>
+//                 <figcaption>
+//                     <h3>{props.titre}</h3>
+//                     <p>{props.description}</p>
+//                     <h4>{props.prix}</h4>
+//                     <h5>{props.avis}</h5>
+//                 </figcaption>
+//             </figure>
+//   </div>
+// )}

@@ -14,6 +14,7 @@ root.render(
   <React.StrictMode>
     <Header />
     <Produit />
+    {/* <Produit titre= /> */}
     <Message messagePasse="Hello !" prenom="Jane" />
     <Message messagePasse="Hello !" prenom="John" />
     <Message messagePasse="Hello !" prenom="Jean" />
