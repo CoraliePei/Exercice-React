@@ -1,25 +1,40 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App/App';
-import Footer from './Footer/Footer';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
 import Header from './Header/Header';
-import Emoji from './Emoji/Emoji';
 import Produit from './Produit/Produit';
 import Message from './Message/Message';
+import Emoji from './Emoji/Emoji';
+import App from './App/App';
+import Footer from './Footer/Footer';
+
+import './index.css';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header />
+    <BrowserRouter>
+      <Routes>
+        {/* Cette ligne permet de positionner le header sur toutes les pages qu'elle englobe */}
+        <Route path='/' element={<Header />}> 
+          <Route index element={<App />} />
+          <Route path='contenu' element={<App />} />
+          <Route path='message' element={<Message />} />
+          <Route path='produit' element={<Produit />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
+
+
+    {/* <Header />
     <Produit />
-    {/* <Produit titre= /> */}
     <Message messagePasse="Hello !" prenom="Jane" />
     <Message messagePasse="Hello !" prenom="John" />
     <Message messagePasse="Hello !" prenom="Jean" />
     <Emoji />
     <App />
-    <Footer />
+    <Footer /> */}
   </React.StrictMode>
 );
