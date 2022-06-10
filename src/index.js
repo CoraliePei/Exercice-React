@@ -4,11 +4,9 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Header from './Header/Header';
 import Produit from './Produit/Produit';
-import Message from './Message/Message';
-import Emoji from './Emoji/Emoji';
 import App from './App/App';
-import Footer from './Footer/Footer';
 import Contact from './Contact/Contact'
+import Posts from './Posts/Posts'
 
 import './index.css';
 
@@ -26,6 +24,7 @@ root.render(
           <Route path='contenu' element={<App />} />
           <Route path='contact' element={<Contact />} />
           <Route path='produit' element={<Produit />} />
+          <Route path='posts' element={<Posts />} />
         </Route>
       </Routes>
     </BrowserRouter>

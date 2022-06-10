@@ -1,5 +1,6 @@
 // Commande pour récolter les données entrées dans le formulaire
 import { useState } from "react";
+import React from 'react'
 import './Contact.css';
 
 function Contact() {

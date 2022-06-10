@@ -1,13 +1,23 @@
 import logo from '../logo.svg';
 import './App.css';
+import React, { useState } from "react";
 
-function App() {
+export default function App() {
 
+  const initialCount = 0;
+  const [count, setCount] = useState(0);
   const bienvenue = <h1>Bienvenue chez React JS</h1>
+
   return (
     <div className="App">
       <main className="App-main">
         {bienvenue}
+        <div className="compteur">
+          Total : {count}
+          <button onClick={() => setCount(initialCount)}>Réinitialiser</button>
+          <button onClick={() => setCount((prevCount) => prevCount -1)}>-</button>
+          <button onClick={() => setCount((prevCount) => prevCount +1)}>+</button>
+        </div>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.js</code> and save to reload.
@@ -24,5 +34,3 @@ function App() {
     </div>
   );
 }
-
-export default App;

@@ -1,5 +1,6 @@
 import './Header.css';
-import { Outlet,Link } from 'react-router-dom'
+import { Outlet,Link } from 'react-router-dom';
+import React from 'react';
 
 function Header() {
   return (
@@ -18,6 +19,9 @@ function Header() {
                     </li>
                     <li>
                       <Link to="/produit">Produit</Link>
+                    </li>
+                    <li>
+                      <Link to="/posts">Posts</Link>
                     </li>
                 </ul>
             </nav>

@@ -1,4 +1,5 @@
 import './Emoji.css';
+import React from 'react'
 
 // const montrerEmoji = event => alert(event.target.id)
 
