@@ -1,0 +1,29 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contact form {
+    max-width: 20rem;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.contact form label {
+    width: 100%;
+}
+
+.contact form label input {
+    width: 100%;
+}
+
+input[type="submit"] {
+    background-color: rgb(156, 236, 236);
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    border: none;
+}
